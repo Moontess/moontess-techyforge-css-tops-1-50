@@ -1,0 +1,233 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../Avenir\ Font\ Family/AvenirLTStd-Roman.otf");
+  font-weight: Roman;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: Avenir;
+  margin: 0;
+  padding: 16px;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  color: #252525;
+  font-size: 32px;
+  margin: 0;
+  margin-top: 0.9rem;
+  line-height: 40px;
+  padding: 0;
+}
+
+.aside-content {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: 14px;
+  color: #252525;
+  opacity: 80%;
+}
+
+button {
+  text-align: center;
+  font-size: 16px;
+  background-color: #252525;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 0.5rem 1.8rem;
+  transition: all 0.5s;
+}
+
+button:hover {
+  font-weight: bolder;
+  color: #fff;
+  background-color: rgb(14, 12, 12);
+  transform: scale(1.01);
+  border: 1px solid #000;
+  box-shadow: 0 0 5px #000;
+  outline: none;
+  cursor: pointer;
+}
+
+img {
+  align-self: center;
+  width: 95%;
+  height: 375px;
+  border-radius: 10px;
+  transition: all 1s;
+}
+
+img:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    padding: 8px;
+  }
+
+  h1 {
+    width: 90%;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 14px;
+    width: 75%;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 0.8rem 2.5rem;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  body {
+    padding: 16px;
+  }
+
+  article {
+    gap: 16px;
+  }
+
+  .container {
+    gap: 16px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  h1 {
+    width: 80%;
+    font-size: 48px;
+    line-height: 50px;
+    margin: 0 auto;
+  }
+
+  p {
+    margin-top: 4px;
+    width: 90%;
+    font-size: 16px;
+  }
+
+  img {
+    width: 90%;
+    height: 410px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    padding: 32px;
+  }
+
+  .container {
+    gap: 16px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  h1 {
+    width: 100%;
+    line-height: 60px;
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 18px;
+    width: 85%;
+  }
+
+  img {
+    width: 95%;
+    height: 380px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 36px;
+  }
+
+  h1 {
+    line-height: 70px;
+    width: 80%;
+  }
+
+  p {
+    width: 80%;
+    font-size: 20px;
+  }
+
+  img {
+    height: 370px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 48px;
+  }
+
+  .hero {
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 80px;
+    width: 95%;
+  }
+
+  p {
+    font-size: 26px;
+    width: 80%;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 18px 48px;
+  }
+}

@@ -1,0 +1,276 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../Avenir\ Font\ Family/AvenirLTStd-Roman.otf");
+  font-weight: Roman;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Avenir;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero,
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  gap: 24px;
+}
+
+.text {
+  width: 92%;
+  height: auto;
+}
+
+h1 {
+  color: #252525;
+  line-height: 40px;
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  width: 95%;
+  margin-top: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  color: #252525;
+  opacity: 80%;
+}
+
+button {
+  text-align: center;
+  font-size: 16px;
+  background-color: #252525;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 0.5rem 1.8rem;
+  transition: all 0.5s;
+}
+
+button:hover {
+  font-weight: bolder;
+  color: #fff;
+  background-color: rgb(14, 12, 12);
+  transform: scale(1.01);
+  border: 1px solid #000;
+  box-shadow: 0 0 5px #000;
+  outline: none;
+  cursor: pointer;
+}
+
+.gallery {
+  width: 95%;
+  height: auto;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+  gap: 16px;
+}
+
+img {
+  width: 300px;
+  height: 280px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+img:hover {
+  transform: scale(1.04);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.45);
+}
+
+@media screen and (min-width: 500px) {
+  body {
+    padding: 32px;
+  }
+
+  h1 {
+    width: 95%;
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  p {
+    font-size: 12px;
+    width: 75%;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 0.8rem 2.5rem;
+  }
+
+  .gallery {
+    width: 100%;
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 225px;
+    height: 175px;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  h1 {
+    width: 80%;
+    font-size: 52px;
+    line-height: 60px;
+  }
+
+  p {
+    width: 70%;
+    font-size: 16px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .gallery {
+    width: 100%;
+  }
+
+  img {
+    width: 155px;
+    height: 125px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    padding: 32px;
+  }
+
+  .hero {
+    gap: 16px;
+  }
+
+  .text {
+    width: 75%;
+  }
+
+  h1 {
+    width: 100%;
+    font-size: 56px;
+  }
+
+  p {
+    font-size: 18px;
+    width: 65%;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .gallery {
+    width: 95%;
+    gap: 14px;
+  }
+
+  img {
+    width: 270px;
+    height: 210px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    height: 100vh;
+  }
+
+  .hero {
+    gap: 24px;
+  }
+
+  h1 {
+    line-height: 48px;
+    width: 70%;
+  }
+
+  p {
+    width: 58%;
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 16px;
+  }
+
+  .gallery {
+    width: 80%;
+    gap: 16px;
+  }
+
+  img {
+    width: 195px;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 8px;
+  }
+
+  .hero {
+    margin: 0px;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  .text {
+    width: 85%;
+  }
+
+  h1 {
+    font-size: 64px;
+    line-height: 70px;
+    width: 95%;
+  }
+
+  p {
+    font-size: 26px;
+    width: 80%;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 18px 48px;
+  }
+
+  .gallery {
+    width: 85%;
+    height: 100%;
+    gap: 14px;
+  }
+
+  img {
+    min-width: 225px;
+    min-height: 145px;
+  }
+}
